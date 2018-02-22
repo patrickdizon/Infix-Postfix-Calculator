@@ -68,7 +68,6 @@ def eval_infix(infix_list, operators):
     for oi, o in enumerate(operators):
         for vi, v in enumerate(infix_list):
             if v == o:
-                print(infix_list[vi],infix_list[vi-1])
                 infix_list[vi-1] = OperandPairs(
                     str(infix_list[vi-1]) if infix_list[vi-1] != None else None,
                     str(infix_list[vi+1]) if infix_list[vi+1] != None else None,
